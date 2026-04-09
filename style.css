@@ -1,0 +1,395 @@
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --card-bg: #fff;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header .header {
+    background-color: rgba(31, 30, 30, 0.9);
+    padding: 10px 0;
+}
+
+#header .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header h1 {
+    color: white;
+    margin: 0;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(31, 30, 30, 0.95);
+    z-index: 1000;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    margin-left: 5px;
+}
+
+.hero {
+    margin-top: 80px;
+    height: 200px;
+    background: url('img/one.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+#header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+body.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #f5f5f5;
+    --card-bg: #2d2d2d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.recipe-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ddd;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+.api-recipes {
+    background: linear-gradient(135deg, #f6f9fc, #e9f5ee);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.api-recipes h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.api-recipes .search-box {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.api-recipes input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.api-recipes input:focus {
+    border-color: #27ae60;
+    outline: none;
+}
+
+.api-recipes button {
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.api-recipes button:hover {
+    background: #219150;
+}
+
+.api-recipes .meal-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.api-recipes .meal-card h2 {
+    margin-bottom: 10px;
+    color: #27ae60;
+}
+
+.api-recipes .meal-card h3 {
+    margin-top: 15px;
+}
+
+.api-recipes .meal-card a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.api-recipes .meal-card a:hover {
+    text-decoration: underline;
+}
+
+.api-recipes .error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.api-recipes .meal-card {
+    text-align: center;
+    color: #222;
+}
+
+.api-recipes .meal-card img {
+    width: 500px;
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.api-recipes .meal-card h2,
+.api-recipes .meal-card p {
+    color: #222;
+}
+
+.cocktails-section {
+    background: linear-gradient(135deg, #f0f4ff, #e8eef9);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+body.dark .cocktails-section {
+    background: linear-gradient(135deg, #2a2a3a, #222232);
+}
+
+.cocktails-section h2 {
+    text-align: center;
+    color: #6a1b9a;
+}
+
+body.dark .cocktails-section h2 {
+    color: #ce93d8;
+}
+
+.cocktails-section .controls {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cocktails-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+.cocktails-section button {
+    padding: 10px 20px;
+    background: #8e24aa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cocktails-section button.secondary {
+    background: #ff8f00;
+}
+
+.cocktails-section button:hover {
+    filter: brightness(0.9);
+}
+
+.cocktails-section .cocktail-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center;
+    color: #222;
+}
+
+body.dark .cocktails-section .cocktail-card {
+    background: #2d2d2d;
+    color: #f5f5f5;
+}
+
+.cocktails-section .cocktail-card img {
+    width: 500px;
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.cocktails-section .cocktail-card ul {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.cocktails-section .placeholder {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-bar {
+        width: 100%;
+        justify-content: center;
+    }
+    .controls {
+        margin-top: 5px;
+    }
+}

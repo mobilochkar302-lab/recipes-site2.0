@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепти для всіх🍲🍹</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+
+<div id="header">
+    <div class="header">
+        <div class="nav-bar">
+            <a href="index.html" class="logo" id="homeText">ГОЛОВНА</a>
+
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Пошук...">
+                <select id="filter">
+                    <option value="all" id="optAll">Всі</option>
+                    <option value="breakfast" id="optBreakfast">Сніданок</option>
+                    <option value="lunch" id="optLunch">Обід</option>
+                    <option value="dinner" id="optDinner">Вечеря</option>
+                    <option value="desserts" id="optDesserts">Десерти</option>
+                </select>
+            </div>
+
+            <div class="controls">
+                <button id="themeToggle">🌙</button>
+                <button id="langToggle">EN</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="hero">
+    <h2 id="heroText">Смачні рецепти щодня</h2>
+</section>
+
+<main class="container">
+    <div id="recipes" class="grid"></div>
+</main>
+
+<div class="api-recipes">
+    <h1 id="apiTitle">Пошук рецептів світу 🍲</h1>
+    <div class="search-box">
+        <input type="text" id="mealInput" placeholder="Введіть страву...">
+        <button id="searchBtnMeal">Знайти</button>
+    </div>
+    <div id="result"></div>
+</div>
+
+<div class="cocktails-section">
+    <h2>🍹 Коктейльний помічник</h2>
+    <div class="controls">
+        <input type="text" id="cocktailSearchInput" placeholder="Введіть назву (напр. Margarita)">
+        <button id="cocktailSearchBtn">Шукати коктейль</button>
+        <button id="randomCocktailBtn" class="secondary">Випадковий коктейль</button>
+    </div>
+    <div id="cocktailResult" class="result-container">
+        <p class="placeholder">Оберіть коктейль, щоб побачити рецепт</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    /* Додай цей рядок: */
+    "outDir": "./dist",
+    
+    /* Також корисно вказати, де лежать вихідні файли: */
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"]
+}
